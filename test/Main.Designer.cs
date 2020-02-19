@@ -31,14 +31,16 @@
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtIPINFOResult = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(697, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(262, 35);
+            this.button1.Size = new System.Drawing.Size(284, 35);
             this.button1.TabIndex = 0;
             this.button1.Text = "Загрузить excel";
             this.button1.UseVisualStyleBackColor = true;
@@ -56,27 +58,38 @@
             // txtIPINFOResult
             // 
             this.txtIPINFOResult.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtIPINFOResult.Location = new System.Drawing.Point(697, 53);
+            this.txtIPINFOResult.Location = new System.Drawing.Point(6, 15);
             this.txtIPINFOResult.Multiline = true;
             this.txtIPINFOResult.Name = "txtIPINFOResult";
             this.txtIPINFOResult.ReadOnly = true;
             this.txtIPINFOResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtIPINFOResult.Size = new System.Drawing.Size(262, 460);
+            this.txtIPINFOResult.Size = new System.Drawing.Size(262, 435);
             this.txtIPINFOResult.TabIndex = 5;
             // 
-            // Form1
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtIPINFOResult);
+            this.groupBox1.Location = new System.Drawing.Point(701, 51);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(280, 462);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Информация об ip";
+            // 
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 519);
-            this.Controls.Add(this.txtIPINFOResult);
+            this.ClientSize = new System.Drawing.Size(996, 524);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "Main";
             this.Text = "test";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -85,6 +98,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtIPINFOResult;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 

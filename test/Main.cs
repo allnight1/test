@@ -62,7 +62,7 @@ namespace test
             var client = new RestClient("http://ip-api.com/json/" + strIP+ "?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,zip,lat,lon,timezone,currency,isp,org,as,asname,reverse,mobile,proxy,hosting,query");
             var request = new RestRequest()
             {
-                Method = Method.POST
+                Method = Method.GET
 
             };
             var response = client.Execute(request);
